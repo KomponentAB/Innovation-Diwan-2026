@@ -60,6 +60,7 @@ WA.onInit().then(() => {
     toolTip: "افتح خريطة مصغرة لمدينة MBS",
     callback: () => {
       WA.ui.modal.openModal({
+        allowFullScreen: true, closable: true,
         title: "Map",
         src: "https://p.interacty.me/df869c4e41ad37c8/iframe.html",
         allow: "",

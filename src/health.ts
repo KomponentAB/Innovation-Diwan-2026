@@ -76,6 +76,7 @@ WA.onInit().then(() => {
     toolTip: "فتح خريطة مصغرة",
     callback: () => {
       WA.ui.modal.openModal({
+        allowFullScreen: true, closable: true,
         title: "Map",
         src: "https://p.interacty.me/e07f8d794a396252/iframe.html",
         allow: "",

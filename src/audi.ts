@@ -76,11 +76,12 @@ WA.onInit().then(() => {
     toolTip: "فتح خريطة مصغرة",
     callback: () => {
       WA.ui.modal.openModal({
+        allowFullScreen: true, closable: true,
         title: "Map",
         src: "https://p.interacty.me/1680ee9453ff480c/iframe.html",
         allow: "",
         allowApi: true,
-        position: "center",
+        position: "center"
         // Removed unsupported 'onClose' property
       });
     },
